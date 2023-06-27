@@ -45,3 +45,25 @@ Taiyaki1.inside();
 Taiyaki2.inside();
 Taiyaki3.inside();
 
+{
+  class Taiyaki {
+    constructor(taste) {
+      this.taste = taste;
+    }
+
+      show() {
+        console.log(`中身は${this.taste}です`);
+      }
+  }
+
+  const posts = [
+    new Taiyaki ('あんこ'),
+    new Taiyaki ('クリーム'),
+    new Taiyaki('チーズ'),
+  ];
+
+  // show(posts[0]);
+  posts[0].show();
+  posts[1].show();
+  posts[2].show();
+}
