@@ -56,7 +56,10 @@
         } else if (select === "English") {
           jpText.classList.add("hidden");
           enText.classList.remove("hidden");
-        } 
+        } else if (select === '全て表示') {
+          jpText.classList.remove("hidden");
+          enText.classList.remove("hidden");
+        }
         }
     </script>
   </body>
