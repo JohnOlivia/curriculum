@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <select onchange="changeLang()" >
+      <option id="select">選択してください</option>
+      <option id="selected_jpn">日本語</option>
+      <option id="selected_en">English</option>
+      <option id="selected_all">全て表示</option>
+    </select>
+    <table>
+      <tr id="box_jp">
+        <th>日本</th>
+        <td >こんにちは</td>
+        <td >ありがとう</td>
+        <td >さようなら</td>
+      </tr>
+      <tr id="box_en">
+        <th>English</th>
+        <td id="en_hello">Hello</td>
+        <td id="en_thankyou">Thank you</td>
+        <td id="en_goodbye">Good Bye</td>
+      </tr>
+    </table>
+
+    <script>
+      //①onchangeで使用されている関数の中身を実装してください。
+      function changeLang() {
+        const select = document.querySelector("select").value;
+        const jpText = document.querySelector("#box_jp");
+        const enText = document.querySelector("#box_en");
+
+        //日本語を選択
+        if (select === "日本語") {
+          jpText.classList.remove("hidden");
+          enText.classList.add("hidden");
+        } else if (select === "English") {
+          jpText.classList.add("hidden");
+          enText.classList.remove("hidden");
+        } 
+        }
+    </script>
+  </body>
+</html>
