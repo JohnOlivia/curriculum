@@ -1,0 +1,41 @@
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+table {
+  outline: 5px solid black;
+  border-collapse: collapse;
+  margin: 30px auto;
+}
+td {
+  outline: 0.7px solid black;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+input {
+  width: 80px;
+  height: 30px;
+}
+
+.target {
+  background-color: magenta;
+}
+.stop {
+  background-color: lightgreen;
+}
+.stay {
+  background-color: rgba(59,253,255,0.7);
+  color: #ccc;
+}
