@@ -1,0 +1,31 @@
+.all {
+  width: 100%;
+  color: #fff;
+}
+.header {
+  height: 100px;
+  background: #141f40;
+}
+.main {
+  height: 250px;
+  clear: both;
+}
+
+.left {
+  width: 150px;
+  height: 100%;
+  float: left;
+  background: #80bfa8;
+}
+.right {
+  width: 250px;
+  height: 100%;
+  float: left;
+  background: #8c2727;
+}
+
+
+.footer {
+  background: #d98d30;
+  height: 100px;
+}
