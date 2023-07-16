@@ -9,6 +9,6 @@
     }
   } catch (error) {
     //例外エラーが起きた時に実行する処理
-    console.log('エラーがでた');
+    console.log(error.message);
   }
 }
