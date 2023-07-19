@@ -3,6 +3,7 @@
   color: #fff;
 }
 .header {
+  width: 400px;
   height: 100px;
   background: #141f40;
 }
@@ -28,4 +29,6 @@
 .footer {
   background: #d98d30;
   height: 100px;
+  width: 400px;
+
 }
