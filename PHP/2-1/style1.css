@@ -4,6 +4,7 @@
 }
 .header {
   height: 100px;
+  width: 400px;
   background: #141f40;
 }
 .main {
@@ -28,4 +29,6 @@
 .footer {
   background: #d98d30;
   height: 100px;
+  width: 400px;
+
 }
