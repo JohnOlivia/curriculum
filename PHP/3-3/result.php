@@ -26,7 +26,8 @@
 
   
   //⑤今日の日付と、名前、番号、おみくじ結果を表示しましょう
-  echo date("Y-m-d H:i:s", time());
+  date_default_timezone_set('Asia/Tokyo');
+  echo date("Y/m/d H:i:s");
   echo '<br>';
   echo '名前は、'.$my_name. 'です。' ;
   echo '<br>';
