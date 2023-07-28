@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main__visual {
+  height: 100vh;
+  background-color: #BDBDB7;
+}
+.main__visual h1 {
+  padding-top: 100px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+.main__visual .first {
+  width: 200px;
+  margin: 30px auto;
+}
+.main__visual .q__text {
+  text-align: center;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
