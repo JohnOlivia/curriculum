@@ -20,4 +20,11 @@
 .main__visual .q__text {
   text-align: center;
   color: #fff;
-}/*# sourceMappingURL=style.css.map */
+}
+.main__visual label {
+  margin-left: 20px;
+}
+.main__visual h2 {
+  margin: 20px 0;
+}
+/*# sourceMappingURL=style.css.map */
