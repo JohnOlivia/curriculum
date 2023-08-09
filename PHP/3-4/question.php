@@ -30,26 +30,32 @@
         <h2>①ネットワークのポート番号は何番？</h2>
         <!--③ 問題のradioボタンを「foreach」を使って作成する-->
         <?php
-        foreach ($nums as $num) {
-          echo '<label><input type="radio" name="nums" value="' . $num . '"> ' . $num . '</label>';
-        }
-        ?>
+        foreach ($nums as $num):?>
+          <label for="<?php echo htmlspecialchars($num); ?>">
+          <input type="radio" name="nums" id="<?php echo htmlspecialchars($num); ?>" value="<?php echo htmlspecialchars($num); ?>">
+          <?php echo $num ?>
+          </label>
+        <?php endforeach ?>
 
         <h2>②Webページを作成するための言語は？</h2>
         <!--③ 問題のradioボタンを「foreach」を使って作成する-->
         <?php
-        foreach ($langs as $lang) {
-          echo '<label><input type="radio" name="langs" value="' . $lang . '"> ' . $lang . '</label>';
-        }
-        ?>
+        foreach ($langs as $lang):?>
+           <label for="<?php echo htmlspecialchars($lang); ?>">
+            <input type="radio" name="langs" id="<?php echo htmlspecialchars($lang); ?>" value="<?php echo htmlspecialchars($lang); ?>">
+            <?php echo $lang ?>
+          </label>
+        <?php endforeach ?>
 
         <h2>③MySQLで情報を取得するためのコマンドは？</h2>
         <!--③ 問題のradioボタンを「foreach」を使って作成する-->
         <?php
-        foreach ($commands as $command) {
-          echo '<label><input type="radio" name="commands" value="' . $command . '"> ' . $command . '</label>';
-        }
-        ?>
+        foreach ($commands as $command) :?>
+          <label for="<?php echo htmlspecialchars($command); ?>">
+          <input type="radio" name="commands" id="<?php echo htmlspecialchars($command); ?>" value="<?php echo htmlspecialchars($command); ?>">
+          <?php echo $command ?>
+        </label>
+      <?php endforeach ?>
 
         <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
         <input type="hidden" name="my_name" value="<?php echo $name; ?>">
