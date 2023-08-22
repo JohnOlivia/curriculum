@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  width: 100%;
+}
+img {
+  background-color: #add8e6;
+  width: 200px;
+  height: 120px;
+}
+.name__area {
+  background-color: #87ceeb;
+  height: 60px;
+  width: 800px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.login__area {
+  background-color: #00ffff;
+  height: 60px;
+  font-size: 1rem;
+  width: 800px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+table {
+  max-width: 1000px;
+  margin: 0 auto;
+} 
+table th {
+  text-align: center;
+  background-color: #87ceeb;
+  font-size: 1.1rem;
+} 
+table td {
+  background-color: #e0ffff;
+  border-collapse: collapse;
+}
+
+footer {
+  background-color: #00ced1;
+  height: 120px;
+  width: 1000px;
+}
