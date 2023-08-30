@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.singUp__wrap {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px 30px;
+  background-color: azure;
+}
+.blue__btn {
+  background-color: #0066ff;
+  color: white;
+  padding: 5px 50px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.login__wrap {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+}
+.login__wrap h1 {
+  display: inline-block;
+  margin-right: 20px;
+}
+.login__title {
+  display: flex;
+  align-items: center;
+}
+.signUp__btn {
+  width: 200px;
+  background-color: #20b2aa;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.signUp__btn a {
+  text-decoration: none;
+}
+
+#name {
+  margin-top: 20px;
+}
+#password {
+  margin-top: 20px;
+}
+.books__wrap {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+}
+.books__wrap h2{
+  font-size: 1rem;
+  font-weight: 100;
+}
+.main__wrap {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+}
+#btns {
+  display: flex;
+  padding: 25px 0;
+}
+.add__btn {
+  padding: 5px 10px;
+  background-color: #0066ff;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.add__btn a {
+  color: white;
+  text-decoration: none;
+}
+.logout__btn {
+  padding: 5px 10px;
+  background-color: gray;
+  border-radius: 10px;
+  margin-right: 20px;
+
+}
+.logout__btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.books_add_btn {
+  padding: 5px 10px;
+  background-color: forestgreen;
+  border-radius: 10px;
+}
+.books_add_btn a {
+  color: white;
+  text-decoration: none;
+}
+
+table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse:collapse;
+}
+th {
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+  padding: 5px 15px;
+}
+td {
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+}
+.delete {
+  padding: 6px 16px;
+  background-color: red ;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
