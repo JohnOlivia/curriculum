@@ -37,11 +37,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request, $request->name);
+        dd($request, $request->user_id);
         Post::create([
-            'name' => $request->name,
+            'user_id' => $request->name,
             'body' => $request->body,
-            // 'email' => $request->email,
+            //'email' => $request->email,
         ]);
         return to_route('posts.index');
     }
