@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Http\Requests\StoreContactRequest;
 
 class PostController extends Controller
 {
@@ -14,7 +15,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::select('id', 'name', 'body','created_at')
+        $posts = Post::select('id', 'user_id', 'body','created_at')
+        ->orderBy('created_at', 'desc')
         ->get();
         return view('posts.index', compact('posts'));
     }
@@ -35,11 +37,13 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreContactRequest $request)
     {
-        dd($request, $request->user_id);
+        // dd($request, $request->user_id);
+
         Post::create([
-            'user_id' => $request->name,
+            // 'id' => $request->id,
+            'user_id' => $request->user_id,
             'body' => $request->body,
             //'email' => $request->email,
         ]);
@@ -88,6 +92,9 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $post->delete();
+
+        return to_route('posts.index');
     }
 }

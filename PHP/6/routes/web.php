@@ -25,6 +25,7 @@ Route::prefix('posts')->middleware(['auth'])
     Route::get('/', 'index')->name('index');
     Route::get('/create', 'create')->name('create');
     Route::post('/', 'store')->name('store');
+    Route::post('/{id}/destroy', 'destroy')->name('destroy');
     
 });
 

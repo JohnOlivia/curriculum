@@ -181,7 +181,8 @@ return [
 
     'attributes' => [
         'password' => 'パスワード',
-        'email'=>'メールアドレス'
+        'email'=> 'メールアドレス',
+        'body' => '文字数'
     ],
 
 ];
